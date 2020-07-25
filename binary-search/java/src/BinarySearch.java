@@ -4,6 +4,14 @@
  */
 public class BinarySearch {
 
+    /**
+     * Binary search recursive implementation.
+     * @param array Numbers array.
+     * @param value Value to be searched.
+     * @param left Left boundary.
+     * @param right Right boundary.
+     * @return Element index, if not found, returns -1.
+     */
     public static int binarySearchRecursive(int[] array, int value, int left, int right) {
         if (left > right) {
             return -1;
@@ -20,6 +28,14 @@ public class BinarySearch {
         }
     }
 
+    /**
+     * Binary search iterative implementation.
+     * @param array Numbers array.
+     * @param value Value to be searched.
+     * @param left Left boundary.
+     * @param right Right boundary.
+     * @return Element index, if not found, returns -1.
+     */
     public static int bynarySearchIterative(int[] array, int value, int left, int right) {
         while (left <= right) {
             int mid = (left + right) >>> 1; // Bitshift operation.
